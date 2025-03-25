@@ -1,5 +1,6 @@
 /*12/3 v1*/
 /*14/3 v2*/
+/*25/3 v3*/
 
 * {
     margin: 0;
@@ -19,6 +20,13 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
+
+.navbar, .navbar-nav, .navbar-brand, .nav-link {
+    font-family: 'Space Mono', monospace !important;
+    font-size: 16px; /* You can adjust this to your preference */
+}
+
 .main_body{
     min-height: 100vh;
     background-image: url('bg.jpg');
@@ -91,16 +99,16 @@ nav a.active{
 
 /* Make the hamburger lines white */
 .navbar-toggler-icon {
-    background-color: transparent; /* Make sure background is transparent */
-    border: none; /* Remove borders */
+    background-color: transparent; 
+    border: none; 
     background-image: linear-gradient(to top, white 25%, transparent 25%), 
                       linear-gradient(to bottom, white 25%, transparent 25%);
     background-size: 100% 3px, 100% 3px;
     background-position: 0 4px, 0 10px;
     background-repeat: no-repeat;
     content: "";
-    width: 30px; /* Set the width of the hamburger icon */
-    height: 25px; /* Set the height of the hamburger icon */
+    width: 30px; 
+    height: 25px; 
 }
 
 .navbar-toggler{
@@ -127,7 +135,6 @@ nav a.active{
 .name{
     padding-left: 15px;
     padding-top: 15px;
-    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -248,6 +255,7 @@ margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6%;
     
 }
 .ab_intro h1{
@@ -317,6 +325,7 @@ margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6%;
     
 }
 .pro_intro h1{
@@ -397,6 +406,7 @@ margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6%;
 }
 .con_intro p{
    padding-top: 20px;
@@ -445,6 +455,7 @@ input[type="submit"]{
 .privacy_main{
     color: white;
     padding: 20px 20px;
+    margin-top: 6%;
 }
 .pri_intro{
     display: flex;
@@ -500,6 +511,7 @@ input[type="submit"]{
     .navbar-nav .nav-item .nav-link{
         color: black;
     }
+    
     /*nav ul {
         flex-direction: column;
         align-items: center;
@@ -533,6 +545,7 @@ input[type="submit"]{
         flex-direction: column;
         text-align: center;
         max-width: 100%;
+        
         
     }
     
