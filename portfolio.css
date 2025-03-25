@@ -1,0 +1,570 @@
+/*12/3 v1*/
+/*14/3 v2*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.5px; 
+    color: white;
+    margin: 0;
+    padding: 0;
+
+
+
+    display: flex;
+    flex-direction: column;
+}
+.main_body{
+    min-height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+   
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: transparent;
+}
+/*
+.logo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: rgb(158, 35, 224);
+}
+nav a.active{
+    text-decoration: underline;
+    color: rgb(158, 35, 224);
+}
+*/
+
+
+
+
+
+
+/* Make the hamburger lines white */
+.navbar-toggler-icon {
+    background-color: transparent; /* Make sure background is transparent */
+    border: none; /* Remove borders */
+    background-image: linear-gradient(to top, white 25%, transparent 25%), 
+                      linear-gradient(to bottom, white 25%, transparent 25%);
+    background-size: 100% 3px, 100% 3px;
+    background-position: 0 4px, 0 10px;
+    background-repeat: no-repeat;
+    content: "";
+    width: 30px; /* Set the width of the hamburger icon */
+    height: 25px; /* Set the height of the hamburger icon */
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+.nav-link.active {
+    color:  rgb(158, 35, 224) !important; 
+}
+
+
+.navbar-brand  {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+.navbar-brand img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.name{
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.nav-item me-3{
+    margin-left: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.navbar .nav-link:hover {
+    color: rgb(158, 35, 224) !important; 
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.intro_name {
+    text-align:left;
+   /* flex-grow: 1;
+    display: flex;
+    flex-direction: column;*/
+    justify-content: center;
+    margin: 80px;
+    margin-top: 10%;
+    width: 40%;
+    color: white ;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+
+.in_name {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.in_desc {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+
+}
+.contact_btn{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: white solid 1px;
+    border-radius: 20px;
+    padding: 10px 10px; 
+    
+}
+.contact_btn:hover{
+    color: rgb(158, 35, 224);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color:transparent;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: auto;
+    
+}
+
+footer img {
+    margin: 0 10px;
+}
+
+/*about page*/
+.ab_body{
+    min-height: 100%;
+  background-image: url('Untitled.png');
+  background-size: cover; 
+  background-repeat: no-repeat;  
+  background-position: center;
+  background-size: 200% 200%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+    flex-grow: 1; 
+    min-height: 100vh;
+  
+}
+
+.ab_main{
+display: flex;
+justify-content: space-between;
+flex: 1;
+align-items: flex-start;
+width: 80%;
+margin: 50px auto;
+}
+.ab_intro{
+    text-align: center;
+    margin: 50px auto;
+    width:  60%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ab_intro h1{
+    padding-bottom: 20px;
+}
+.ab_intro p{
+    color: rgb(175, 174, 174);
+    font-size: 16px;
+}
+.ab_desc{
+    width: 45%;
+    margin-right: 20px;
+    line-height: 1.5rem;
+    color: rgb(175, 174, 174);
+}
+.ab_desc h3{
+    color: white;
+}
+.ab_desc p a{
+    color: rgb(158, 35, 224);
+    text-decoration: none;
+}
+.ab_skill{
+    width: 45%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.ab_skill h3{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.chip{
+    background-color: transparent;
+    border:white solid 1px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+
+/* project page*/
+
+.pro_body,.pri_body,.con_body{
+    min-height: 100%;
+    background-image: url('Untitled.png');
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: 200% 200%;
+
+    flex-grow: 1; 
+    min-height: 100vh;
+}
+.pro_intro{
+    text-align: center;
+    margin: 50px auto;
+    width:  60%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.pro_intro h1{
+    padding-bottom: 20px;
+}
+.pro_intro p{
+    color: rgb(175, 174, 174);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.pro_main{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    margin: auto 20%;
+
+    height: 100%;
+}
+
+.pro_rows{
+
+    align-items: center;
+    align-items: center;
+    
+}
+
+.pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:max-content ;
+    text-align: center;
+    
+
+}
+.pro img{
+    display: block;
+    width: 100%;
+    width: 300px;
+    height: 150px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+}
+.pro img:hover{
+    display: block;
+    width: 100%;
+    width: 320px;
+    height: 170px;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+}
+
+.pro p{
+    background-color:transparent;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+/*contact page*/
+.con_main{
+    flex: 1;
+    text-align: center;
+    color: #A5C8D6;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    
+}
+.con_intro{
+    text-align: center;
+    margin: 50px auto;
+    width:  60%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.con_intro p{
+   padding-top: 20px;
+   color:rgb(175, 174, 174) ;
+}
+form input,form label,form textarea{
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px 0;
+    color: blueviolet;
+
+}
+
+form{
+    width: 300px;
+    padding: 50px;
+    border: 1px solid rgb(158, 35, 224) ;
+    background-color: rgb(175, 174, 174);
+    justify-content: center;
+    border-radius: 40px;
+}
+input[type="submit"]{
+    background-color: rgb(107, 29, 150);
+    color: rgb(175, 174, 174);
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 15px 15px;
+}
+
+
+
+.pro p a{
+    color: white;
+    text-decoration: none;
+}
+
+.pro_rows a:hover{
+    color:rgb(158, 35, 224) ;
+}
+
+.kn_main, .js_main,.privacy_main,.ai_main{
+    flex: 1;
+}
+
+/*privacy page*/
+.privacy_main{
+    color: white;
+    padding: 20px 20px;
+}
+.pri_intro{
+    display: flex;
+    padding: 20px 15px;
+    color: white;
+    
+}
+
+.pri_intro p{
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.pri_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px 20px;
+}
+.pri_desc ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: rgb(175, 174, 174);
+}
+.pri_desc ul li a{
+    color: white;
+}
+.pri_desc ul li a:hover{
+    color: rgb(158, 35, 224) ;
+}
+
+
+/*responsive adjustments*/
+@media screen and (max-width: 768px) {
+
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .navbar-brand {
+        flex-direction: column;
+    }
+    .navbar-brand .logo{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-brand .name{
+        font-size: 15px;
+    }
+
+    .navbar-nav .nav-item .nav-link{
+        color: black;
+    }
+    /*nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }*/
+    .intro_name{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 30px 10px;
+    }
+    .contact_btn{
+        margin-top: 30px;
+        font-size: 14px;
+
+    }
+    .in_name {
+        font-size: 35px;
+    }
+    .in_desc {
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .ab_main {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        
+    }
+    
+    .ab_desc {
+        width: 100%;
+        float: none;
+      
+    }
+    .ab_desc p{
+        font-size: 12px;
+        
+    }
+    .ab_skill{
+        margin-right: 20px;
+       display: flex;
+       flex-direction: column;
+       margin-top: 100px;
+       width: 100%;
+       float: none;
+    }
+
+    .pro_main {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    footer img {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+    footer{
+        width: 100%;
+    }
+}
